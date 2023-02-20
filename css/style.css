@@ -328,7 +328,6 @@ body {
 }
 .top__contant-button {
   clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
-  padding: 23px 68px;
   background-color: #ffaf00;
 }
 
@@ -462,3 +461,54 @@ body {
   line-height: 36px;
   color: var(--color-secondary);
 }
+
+/* benefits */
+
+.benefits {
+  padding: 35px 0 72px;
+}
+
+.benefits__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 0.002em;
+  text-align: center;
+  color: var(--color-title);
+  margin-bottom: 31px;
+}
+
+.benefits__text {
+  max-width: 790px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.benefits__items {
+  max-width: 1378px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  max-width: 345px;
+  text-align: center;
+}
+.benefits__item-img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.benefits__item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-primary);
+  margin-bottom: 15px;
+}
+
