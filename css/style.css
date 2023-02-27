@@ -512,3 +512,44 @@ body {
   margin-bottom: 15px;
 }
 
+/* about */
+.about {
+  padding: 50px 0 108px;
+}
+
+.about__inner {
+  max-width: 1398px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.about__content {
+  max-width: 664px;
+}
+
+.about__content-suptitle {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--color-title);
+  margin-bottom: 15px;
+}
+
+.about__content-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 0.002em;
+  color: var(--color-title);
+  margin-bottom: 38px;
+}
+
+.about__content-text {
+  margin-bottom: 36px;
+}
+
+.about__content-button {
+  clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+  background-color: #ffaf00;
+}
