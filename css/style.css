@@ -372,33 +372,35 @@ body {
 
 /* reviews */
 .reviews {
+  position: relative;
   background-color: var(--color-bg);
 }
 
 .reviews__inner {
-  position: relative;
   display: flex;
   align-items: center;
   padding: 120px 0;
 }
-.reviews__inner::before {
+.reviews::before {
   content: "";
   position: absolute;
   width: 235px;
   height: 386px;
   top: 0;
-  left: -117px;
+  left: 0;
   background-image: url("../images/decor/reviews-left-decor.svg");
+  background-repeat: no-repeat;
 }
 
-.reviews__inner::after {
+.reviews::after {
   content: "";
   position: absolute;
   width: 235px;
   height: 386px;
   top: 0;
-  right: -117px;
+  right: 0;
   background-image: url("../images/decor/reviews-right-decor.svg");
+  background-repeat: no-repeat;
 }
 
 .reviews__title {
@@ -595,4 +597,84 @@ body {
   line-height: 24px;
   letter-spacing: 0.2px;
   color: var(--color-title);
+}
+
+/* source */
+.source {
+  padding: 77px 0;
+}
+.source__background {
+  padding: 115px;
+  background-color: var(--color-bg);
+  position: relative;
+}
+.source__background::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 515px;
+  height: 514px;
+  background-image: url("../images/decor/source-left-decor.svg");
+  background-repeat: no-repeat;
+  transform: rotate(1.72deg);
+}
+
+.source__background::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 399px;
+  height: 545px;
+  background-image: url("../images/decor/source-right-decor.svg");
+  background-repeat: no-repeat;
+}
+
+.source__inner {
+  position: relative;
+}
+
+.source__inner::before {
+  position: absolute;
+  content: "";
+  right: 185px;
+  top: -163px;
+  width: 585px;
+  height: 662px;
+  background-image: url("../images/source.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.source__content {
+  max-width: 540px;
+  margin-left: 142px;
+}
+
+.source__content-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: 0.2px;
+  color: var(--color-title);
+  margin-bottom: 20px;
+}
+.source__content-title span {
+  display: block;
+}
+
+.source__content-text {
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+.source__content-text + .source__content-text {
+  margin: 35px 0 20px;
+}
+
+.product-features__item {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 27px;
 }
