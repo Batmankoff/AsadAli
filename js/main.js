@@ -13,3 +13,13 @@ document.addEventListener("click", function (event) {
     languageItem.classList.remove("visible");
   }
 });
+const swiper = new Swiper(".testimoinials__slider", {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 3,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".testimoinials__slider-button__next",
+    prevEl: ".testimoinials__slider-button__prev",
+  },
+});
